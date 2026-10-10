@@ -49,12 +49,15 @@ body {
     gap: 12px;
 }
 
-.logo-icon {
-    font-size: 1.8rem;
-    color: var(--accent);
-    background: rgba(245, 130, 32, 0.1);
-    padding: 10px;
+/* Ajuste correto do Logótipo (ico.png) */
+.logo-img {
+    width: 40px !important;
+    height: 40px !important;
+    max-width: 40px !important;
+    object-fit: contain;
     border-radius: 8px;
+    background: rgba(245, 130, 32, 0.1);
+    padding: 4px;
 }
 
 .logo-text {

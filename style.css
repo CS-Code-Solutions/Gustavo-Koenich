@@ -181,15 +181,6 @@ section {
     padding: 70px 0;
 }
 
-.section-tag {
-    color: var(--accent);
-    font-size: 0.8rem;
-    font-weight: bold;
-    letter-spacing: 2px;
-    display: block;
-    margin-bottom: 10px;
-}
-
 h2 {
     font-size: 2.2rem;
     font-weight: 800;

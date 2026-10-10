@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-PT">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gustavo Soluções Elétricas e Gás</title>
+    <title>Gustavo Soluções Elétricas</title>
     <link rel="stylesheet" href="style.css">
     <!-- FontAwesome para ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -11,138 +11,190 @@
 <body>
 
     <!-- Cabeçalho -->
-    <header>
+    <header class="header">
         <div class="container nav-container">
             <div class="logo">
-                <i class="fa-solid fa-bolt"></i> <span>Gustavo Soluções</span>
+                <i class="fa-solid fa-bolt logo-icon"></i>
+                <div class="logo-text">
+                    <span class="logo-title">Gustavo</span>
+                    <span class="logo-subtitle">SOLUÇÕES ELÉTRICAS</span>
+                </div>
             </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#contato" class="btn-nav">Contato</a></li>
-                </ul>
-            </nav>
-            <div class="menu-toggle" id="mobile-menu">
-                <i class="fa-solid fa-bars"></i>
-            </div>
+            <a href="https://wa.me/5551984104930?text=Olá%2C%20gostaria%20de%20um%20orçamento!" target="_blank" class="btn-agendar">
+                Agendar agora
+            </a>
         </div>
     </header>
 
-    <!-- Seção Início / Hero -->
-    <section id="inicio" class="hero">
-        <div class="container hero-content">
-            <h1>Serviços de Elétrica e Gás com Segurança e Qualidade</h1>
-            <p>Atendimento profissional para residências e comércios. Instalações, manutenções preventivas e corretivas com rapidez e garantia.</p>
-            <a href="https://wa.me/5500000000000?text=Olá%2C%20gostaria%20de%20um%20orçamento!" target="_blank" class="btn-primary">
-                <i class="fa-brands fa-whatsapp"></i> Chamar no WhatsApp
-            </a>
-        </div>
-    </section>
-
-    <!-- Seção Serviços -->
-    <section id="servicos" class="services">
+    <!-- Secção Hero / Início -->
+    <section class="hero">
         <div class="container">
-            <h2 class="section-title">Nossos Serviços</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <i class="fa-solid fa-plug"></i>
-                    <h3>Instalações Elétricas</h3>
-                    <p>Chuveiros, tomadas, disjuntores, ventiladores de teto e iluminação em geral.</p>
-                </div>
-                <div class="service-card">
-                    <i class="fa-solid fa-triangle-exclamation"></i>
-                    <h3>Manutenção Corretiva</h3>
-                    <p>Identificação de curtos-circuitos, quedas de energia e reparos urgentes.</p>
-                </div>
-                <div class="service-card">
-                    <i class="fa-solid fa-fire"></i>
-                    <h3>Instalação e Teste de Gás</h3>
-                    <p>Pontos de gás, conversão de fogões, testes de estanqueidade e detecção de vazamentos.</p>
-                </div>
-                <div class="service-card">
-                    <i class="fa-solid fa-clipboard-check"></i>
-                    <h3>Laudos e Vistorias</h3>
-                    <p>Avaliação técnica das instalações para maior segurança do seu imóvel.</p>
-                </div>
+            <div class="badge-atendimento">
+                <i class="fa-solid fa-shield-halved"></i> ATENDIMENTO PROFISSIONAL EM CANOAS E REGIÃO
             </div>
-        </div>
-    </section>
-
-    <!-- Seção Sobre -->
-    <section id="sobre" class="about">
-        <div class="container about-content">
-            <div class="about-text">
-                <h2>Sobre o Profissional</h2>
-                <p>Com anos de experiência no mercado, o <strong>Gustavo Soluções Elétricas e Gás</strong> preza pela excelência técnica, seguindo rigorosamente as normas de segurança (como a NBR 5410). Nosso compromisso é entregar um serviço limpo, seguro e duradouro para sua total tranquilidade.</p>
-                <div class="features-list">
-                    <span><i class="fa-solid fa-check"></i> Profissional Qualificado</span>
-                    <span><i class="fa-solid fa-check"></i> Atendimento Rápido</span>
-                    <span><i class="fa-solid fa-check"></i> Garantia nos Serviços</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Seção Contato -->
-    <section id="contato" class="contact">
-        <div class="container">
-            <h2 class="section-title">Entre em Contato</h2>
-            <p class="section-subtitle">Precisa de um orçamento ou atendimento de emergência? Fale conosco!</p>
+            <h1>ENERGIA QUE MOVE SEU MUNDO</h1>
+            <p>Soluções elétricas completas e serviços de gás para residências e comércios. Segurança, qualidade e preço justo — orçamento gratuito.</p>
             
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <div class="info-item">
-                        <i class="fa-solid fa-phone"></i>
-                        <div>
-                            <h4>Telefone / WhatsApp</h4>
-                            <p>(00) 00000-0000</p>
-                        </div>
+            <div class="hero-buttons">
+                <a href="https://wa.me/5551984104930?text=Olá%2C%20gostaria%20de%20agendar%20pelo%20WhatsApp!" target="_blank" class="btn-primary">
+                    <i class="fa-brands fa-whatsapp"></i> Agende já pelo WhatsApp
+                </a>
+                <a href="#servicos" class="btn-outline">Ver serviços</a>
+            </div>
+
+            <div class="hero-location">
+                <i class="fa-solid fa-location-dot"></i> Canoas, Porto Alegre e Região Metropolitana
+            </div>
+        </div>
+    </section>
+
+    <!-- Secção 01 // Elétrica -->
+    <section id="servicos" class="section-eletrica">
+        <div class="container">
+            <span class="section-tag">01 // ELÉTRICA</span>
+            <h2>Serviços elétricos com <span class="highlight">segurança</span></h2>
+            <p class="section-desc">Atendimento profissional para residências e comércios, com qualidade comprovada e preço justo.</p>
+
+            <div class="services-grid">
+                <div class="card-servico">
+                    <i class="fa-solid fa-wrench"></i>
+                    <h3>Manutenção elétrica</h3>
+                    <p>Residencial e comercial, preventiva e corretiva</p>
+                </div>
+                <div class="card-servico">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <h3>Instalação de iluminação</h3>
+                    <p>Interna, externa e decorativa</p>
+                </div>
+                <div class="card-servico">
+                    <i class="fa-solid fa-shower"></i>
+                    <h3>Chuveiros e aquecedores</h3>
+                    <p>Torneiras elétricas e aquecedores a gás</p>
+                </div>
+                <div class="card-servico">
+                    <i class="fa-solid fa-wind"></i>
+                    <h3>Ventilação e climatização</h3>
+                    <p>Ventiladores, exaustores e climatização</p>
+                </div>
+                <div class="card-servico">
+                    <i class="fa-solid fa-plug"></i>
+                    <h3>Tomadas e disjuntores</h3>
+                    <p>Instalação e substituição</p>
+                </div>
+                <div class="card-servico">
+                    <i class="fa-solid fa-lock"></i>
+                    <h3>Fechaduras eletrônicas</h3>
+                    <p>Fechaduras digitais e segurança</p>
+                </div>
+                <div class="card-servico">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <h3>Reparos e emergências</h3>
+                    <p>Atendimento rápido quando precisar</p>
+                </div>
+                <div class="card-servico">
+                    <i class="fa-solid fa-bolt"></i>
+                    <h3>Instalações elétricas</h3>
+                    <p>Projetos e execuções completas</p>
+                </div>
+            </div>
+
+            <div class="eletrica-footer-grid">
+                <div class="banner-destaque">
+                    <h3>SEGURANÇA<br>QUALIDADE<br>CONFIANÇA</h3>
+                    <p>O padrão que sua casa e seu negócio merecem.</p>
+                </div>
+                <div class="imagens-ambientes">
+                    <div class="img-box residencial">
+                        <span>RESIDENCIAL</span>
                     </div>
-                    <div class="info-item">
-                        <i class="fa-solid fa-envelope"></i>
-                        <div>
-                            <h4>E-mail</h4>
-                            <p>contato@gustavosolucoes.com</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <div>
-                            <h4>Região de Atendimento</h4>
-                            <p>Atendimento local e redondezas</p>
-                        </div>
+                    <div class="img-box comercial">
+                        <span>COMERCIAL</span>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <form id="contact-form" class="contact-form">
-                    <div class="form-group">
-                        <input type="text" id="nome" placeholder="Seu Nome" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" id="telefone" placeholder="Seu Telefone / WhatsApp" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="mensagem" rows="4" placeholder="Descreva o serviço que você precisa..." required></textarea>
-                    </div>
-                    <button type="submit" class="btn-primary">Enviar Mensagem</button>
-                </form>
+    <!-- Secção 02 // Gás & Cozinha -->
+    <section class="section-gas">
+        <div class="container">
+            <span class="section-tag">02 // GÁS & COZINHA</span>
+            <h2>SUA COZINHA <span class="highlight">SEM LIMITES</span></h2>
+            <p class="section-desc">Instalação, manutenção e conversão de gás profissional em Canoas e Região Metropolitana.</p>
+
+            <div class="gas-grid">
+                <div class="card-gas"><i class="fa-solid fa-fire-flame-simple"></i> FOGÃO</div>
+                <div class="card-gas"><i class="fa-solid fa-utensils"></i> COOKTOP</div>
+                <div class="card-gas"><i class="fa-solid fa-bread-slice"></i> FORNO</div>
+                <div class="card-gas"><i class="fa-solid fa-fire"></i> CHURRASQUEIRA</div>
+            </div>
+
+            <div class="mudando-box">
+                <div class="mudando-title"><i class="fa-solid fa-arrows-rotate"></i> ESTÁ MUDANDO?</div>
+                <ul>
+                    <li>Gás encanado para botijão</li>
+                    <li>Gás de botijão para encanado</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secção Diferenciais -->
+    <section class="diferenciais">
+        <div class="container">
+            <div class="dif-grid">
+                <div class="dif-item"><i class="fa-solid fa-shield-halved"></i> Segurança para seu lar e sua família</div>
+                <div class="dif-item"><i class="fa-solid fa-gear"></i> Serviço rápido, limpo e eficiente</div>
+                <div class="dif-item"><i class="fa-solid fa-circle-check"></i> Garantia do serviço executado</div>
+                <div class="dif-item"><i class="fa-solid fa-user-check"></i> Atendimento especializado e qualificado</div>
+            </div>
+
+            <div class="badges-finais">
+                <span><i class="fa-solid fa-check"></i> SEGURANÇA EM 1º LUGAR</span>
+                <span><i class="fa-solid fa-check"></i> QUALIDADE COMPROVADA</span>
+                <span><i class="fa-solid fa-check"></i> CONFIANÇA QUE GERA RESULTADOS</span>
+                <span><i class="fa-solid fa-bolt"></i> ENERGIA CERTA PARA O QUE IMPORTA</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secção Fale Conosco & Pagamento -->
+    <section id="contato" class="contato-pagamento">
+        <div class="container cp-grid">
+            <!-- Box Fale Conosco -->
+            <div class="fale-conosco-box">
+                <span class="fc-label">FALE CONOSCO</span>
+                <h3>Gustavo</h3>
+                <p class="tel"><i class="fa-solid fa-phone"></i> (51) 98410-4930</p>
+                <p class="regiao"><i class="fa-solid fa-location-dot"></i> Porto Alegre, Canoas e Região</p>
+                <p class="atende"><i class="fa-solid fa-house"></i> Atendemos residências, comércios e condomínios</p>
+                
+                <a href="https://wa.me/5551984104930?text=Olá%2C%20fale%20agora%20pelo%20WhatsApp!" target="_blank" class="btn-whatsapp-grande">
+                    <i class="fa-brands fa-whatsapp"></i> Fale agora pelo WhatsApp
+                </a>
+            </div>
+
+            <!-- Box Aceito Cartão -->
+            <div class="cartao-box">
+                <h3><i class="fa-solid fa-credit-card"></i> ACEITO CARTÃO</h3>
+                <div class="cartoes-grid">
+                    <div class="card-brand">VISA</div>
+                    <div class="card-brand">MASTERCARD</div>
+                    <div class="card-brand">ELO</div>
+                    <div class="card-brand">HIPERCARD</div>
+                </div>
+                <p class="cartao-desc">Débito e crédito — facilidade de pagamento para você.</p>
+                <p class="orcamento-livre">Orçamento gratuito e preço justo.</p>
             </div>
         </div>
     </section>
 
     <!-- Rodapé -->
     <footer>
-        <div class="container footer-content">
-            <p>&copy; 2026 Gustavo Soluções Elétricas e Gás. Todos os direitos reservados.</p>
+        <div class="container">
+            <p>&copy; 2026 Gustavo Soluções Elétricas. Todos os direitos reservados.</p>
         </div>
     </footer>
-
-    <!-- Botão Flutuante WhatsApp -->
-    <a href="https://wa.me/5500000000000?text=Olá%2C%20gostaria%20de%20um%20orçamento!" class="whatsapp-float" target="_blank">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
 
     <script src="script.js"></script>
 </body>

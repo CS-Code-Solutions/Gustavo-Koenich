@@ -16,7 +16,6 @@
     <header class="header">
         <div class="container nav-container">
             <div class="logo">
-                <!-- Logotipo com a sua imagem ico.png -->
                 <img src="ico.png" alt="Gustavo Soluções Elétricas" class="logo-img">
                 <div class="logo-text">
                     <span class="logo-title">Gustavo</span>
@@ -56,45 +55,45 @@
         <div class="container">
             <span class="section-tag">01 // ELÉTRICA</span>
             <h2>Serviços elétricos com <span class="highlight">segurança</span></h2>
-            <p class="section-desc">Atendimento profissional para residências e comércios, com qualidade comprovada e preço justo.</p>
+            <p class="section-desc">Atendimento profissional para residências e comércios, com qualidade comprovada e preço justo. Clique em um serviço para saber mais.</p>
 
             <div class="services-grid">
-                <div class="card-servico">
+                <div class="card-servico" data-service="manutencao">
                     <i class="fa-solid fa-wrench"></i>
                     <h3>Manutenção elétrica</h3>
                     <p>Residencial e comercial, preventiva e corretiva</p>
                 </div>
-                <div class="card-servico">
+                <div class="card-servico" data-service="iluminacao">
                     <i class="fa-solid fa-lightbulb"></i>
                     <h3>Instalação de iluminação</h3>
                     <p>Interna, externa e decorativa</p>
                 </div>
-                <div class="card-servico">
+                <div class="card-servico" data-service="chuveiros">
                     <i class="fa-solid fa-shower"></i>
                     <h3>Chuveiros e aquecedores</h3>
                     <p>Torneiras elétricas e aquecedores a gás</p>
                 </div>
-                <div class="card-servico">
+                <div class="card-servico" data-service="ventilacao">
                     <i class="fa-solid fa-wind"></i>
                     <h3>Ventilação e climatização</h3>
                     <p>Ventiladores, exaustores e climatização</p>
                 </div>
-                <div class="card-servico">
+                <div class="card-servico" data-service="tomadas">
                     <i class="fa-solid fa-plug"></i>
                     <h3>Tomadas e disjuntores</h3>
                     <p>Instalação e substituição</p>
                 </div>
-                <div class="card-servico">
+                <div class="card-servico" data-service="fechaduras">
                     <i class="fa-solid fa-lock"></i>
                     <h3>Fechaduras eletrônicas</h3>
                     <p>Fechaduras digitais e segurança</p>
                 </div>
-                <div class="card-servico">
+                <div class="card-servico" data-service="reparos">
                     <i class="fa-solid fa-triangle-exclamation"></i>
                     <h3>Reparos e emergências</h3>
                     <p>Atendimento rápido quando precisar</p>
                 </div>
-                <div class="card-servico">
+                <div class="card-servico" data-service="instalacoes">
                     <i class="fa-solid fa-bolt"></i>
                     <h3>Instalações elétricas</h3>
                     <p>Projetos e execuções completas</p>
@@ -164,7 +163,6 @@
     <!-- Secção Fale Conosco & Pagamento -->
     <section id="contato" class="contato-pagamento">
         <div class="container cp-grid">
-            <!-- Box Fale Conosco -->
             <div class="fale-conosco-box">
                 <span class="fc-label">FALE CONOSCO</span>
                 <h3>Gustavo</h3>
@@ -177,7 +175,6 @@
                 </a>
             </div>
 
-            <!-- Box Aceito Cartão -->
             <div class="cartao-box">
                 <h3><i class="fa-solid fa-credit-card"></i> ACEITO CARTÃO</h3>
                 <div class="cartoes-grid">
@@ -198,6 +195,19 @@
             <p>&copy; 2026 Gustavo Soluções Elétricas. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <!-- Janela Flutuante (Modal de Serviços) -->
+    <div id="serviceModal" class="modal-overlay">
+        <div class="modal-content">
+            <button id="closeModal" class="modal-close-btn">&times;</button>
+            <div class="modal-icon" id="modalIcon"></div>
+            <h3 id="modalTitle">Título do Serviço</h3>
+            <p id="modalDescription">Resumo detalhado do serviço selecionado...</p>
+            <a id="modalWhatsappBtn" href="#" target="_blank" class="btn-whatsapp-modal">
+                <i class="fa-brands fa-whatsapp"></i> Chamar no WhatsApp
+            </a>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

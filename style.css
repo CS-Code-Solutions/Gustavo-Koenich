@@ -49,7 +49,6 @@ body {
     gap: 12px;
 }
 
-/* Ajuste correto do Logótipo (ico.png) */
 .logo-img {
     width: 40px !important;
     height: 40px !important;
@@ -220,10 +219,12 @@ h2 {
     padding: 25px;
     border-radius: 8px;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .card-servico:hover {
-    border-color: rgba(245, 130, 32, 0.3);
+    border-color: rgba(245, 130, 32, 0.5);
+    transform: translateY(-3px);
 }
 
 .card-servico i {
@@ -535,6 +536,96 @@ footer {
     color: var(--text-gray);
     font-size: 0.85rem;
     border-top: 1px solid rgba(255,255,255,0.03);
+}
+
+/* --- ESTILOS DA JANELA FLUTUANTE (MODAL) --- */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    padding: 20px;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background-color: var(--card-bg);
+    border: 1px solid rgba(245, 130, 32, 0.3);
+    padding: 30px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 450px;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+.modal-overlay.active .modal-content {
+    transform: translateY(0);
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: var(--text-gray);
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.modal-close-btn:hover {
+    color: var(--text-white);
+}
+
+.modal-icon {
+    font-size: 2.2rem;
+    color: var(--accent);
+    margin-bottom: 15px;
+}
+
+.modal-content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    color: var(--text-white);
+}
+
+.modal-content p {
+    color: var(--text-gray);
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.btn-whatsapp-modal {
+    background-color: var(--whatsapp);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-whatsapp-modal:hover {
+    opacity: 0.9;
 }
 
 /* Responsividade */

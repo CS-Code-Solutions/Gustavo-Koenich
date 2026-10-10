@@ -313,7 +313,7 @@ h2 {
     background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80');
 }
 
-/* Secção Gás e Cozinha com image.png */
+/* Secção Gás e Cozinha */
 .section-gas {
     border-top: 1px solid rgba(255,255,255,0.05);
 }
@@ -466,10 +466,10 @@ h2 {
     color: var(--accent);
 }
 
-/* Contato e Pagamento */
+/* Secção Unificada: Contato, Perfil e Pagamento */
 .cp-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.2fr 1fr;
     gap: 30px;
 }
 
@@ -485,42 +485,125 @@ h2 {
     font-size: 0.75rem;
     font-weight: bold;
     letter-spacing: 2px;
+    display: block;
+    margin-bottom: 20px;
 }
 
-.fale-conosco-box h3 {
-    font-size: 2rem;
-    margin: 10px 0 15px;
+.perfil-header-unificado {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
 }
 
-.fale-conosco-box p {
+.perfil-avatar {
+    width: 65px;
+    height: 65px;
+    border-radius: 10px;
+    background: rgba(245, 130, 32, 0.1);
+    border: 2px solid var(--accent);
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.perfil-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.perfil-nome-area {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.perfil-nome-area h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--text-white);
+}
+
+.verified-icon {
+    color: #3897f0;
+    font-size: 1rem;
+}
+
+.perfil-cargo {
+    color: var(--accent);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.perfil-bio {
     color: var(--text-gray);
-    margin-bottom: 10px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.contato-detalhes-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.contato-detalhes-lista p {
+    color: var(--text-gray);
+    font-size: 0.9rem;
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 0.95rem;
 }
 
-.fale-conosco-box i {
+.contato-detalhes-lista i {
     color: var(--accent);
+    width: 16px;
+}
+
+.botoes-acao-duplos {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 
 .btn-whatsapp-grande {
     background-color: var(--whatsapp);
     color: #fff;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    padding: 15px;
-    border-radius: 8px;
+    gap: 8px;
+    padding: 12px 18px;
+    border-radius: 6px;
     text-decoration: none;
     font-weight: bold;
-    margin-top: 25px;
+    font-size: 0.9rem;
     transition: 0.3s;
+    flex: 1;
 }
 
 .btn-whatsapp-grande:hover {
+    opacity: 0.9;
+}
+
+.btn-insta-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(220, 39, 67, 0.3);
+}
+
+.btn-insta-pill:hover {
     opacity: 0.9;
 }
 
@@ -570,102 +653,6 @@ h2 {
     color: var(--accent);
     font-weight: bold;
     font-size: 0.9rem;
-}
-
-/* Secção Perfil / Instagram */
-.perfil-insta-section {
-    background-color: #080c14;
-    border-top: 1px solid rgba(255,255,255,0.05);
-    border-bottom: 1px solid rgba(255,255,255,0.05);
-    padding: 60px 0;
-}
-
-.perfil-insta-card {
-    background-color: var(--card-bg);
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    border-radius: 12px;
-    padding: 35px;
-    display: flex;
-    gap: 30px;
-    align-items: flex-start;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
-
-.perfil-avatar {
-    width: 90px;
-    height: 90px;
-    border-radius: 12px;
-    background: rgba(245, 130, 32, 0.1);
-    border: 2px solid var(--accent);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    overflow: hidden;
-}
-
-.perfil-avatar img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.perfil-info {
-    display: flex;
-    flex-direction: column;
-}
-
-.perfil-nome-area {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 4px;
-}
-
-.perfil-info h3 {
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: var(--text-white);
-}
-
-.verified-icon {
-    color: #3897f0;
-    font-size: 1.1rem;
-}
-
-.perfil-cargo {
-    color: var(--accent);
-    font-size: 0.9rem;
-    font-weight: 600;
-    margin-bottom: 12px;
-}
-
-.perfil-bio {
-    color: var(--text-gray);
-    font-size: 0.95rem;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-.btn-insta-pill {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    color: #fff;
-    padding: 10px 22px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 0.95rem;
-    width: fit-content;
-    transition: 0.3s;
-    box-shadow: 0 4px 15px rgba(220, 39, 67, 0.3);
-}
-
-.btn-insta-pill:hover {
-    opacity: 0.9;
-    transform: translateY(-2px);
 }
 
 /* Footer */
@@ -770,7 +757,8 @@ footer {
 
 /* Responsividade */
 @media (max-width: 900px) {
-    .gas-main-layout {
+    .gas-main-layout,
+    .cp-grid {
         grid-template-columns: 1fr;
     }
 }
@@ -779,23 +767,17 @@ footer {
     .hero h1 {
         font-size: 2.3rem;
     }
-    .eletrica-footer-grid,
-    .cp-grid {
+    .eletrica-footer-grid {
         grid-template-columns: 1fr;
     }
     .badges-finais {
         flex-direction: column;
     }
-    .perfil-insta-card {
+    .botoes-acao-duplos {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 25px;
     }
-    .perfil-nome-area {
-        justify-content: center;
-    }
+    .btn-whatsapp-grande,
     .btn-insta-pill {
-        margin: 0 auto;
+        width: 100%;
     }
 }

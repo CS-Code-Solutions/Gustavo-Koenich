@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Base de dados com os resumos detalhados de cada serviço
     const servicesData = {
         manutencao: {
             icon: "fa-solid fa-wrench",
@@ -50,7 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalDescription = document.getElementById('modalDescription');
     const modalWhatsappBtn = document.getElementById('modalWhatsappBtn');
 
-    // Abrir modal ao clicar em um card
     document.querySelectorAll('.card-servico').forEach(card => {
         card.addEventListener('click', () => {
             const serviceKey = card.getAttribute('data-service');
@@ -61,7 +59,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 modalTitle.textContent = data.title;
                 modalDescription.textContent = data.description;
 
-                // Gerar mensagem personalizada para o WhatsApp
                 const whatsappMessage = encodeURIComponent(`Olá, Gustavo! Vi no site o serviço de "${data.title}" e gostaria de solicitar um orçamento.`);
                 modalWhatsappBtn.href = `https://wa.me/5551984104930?text=${whatsappMessage}`;
 
@@ -70,19 +67,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Fechar modal no botão X
     closeModalBtn.addEventListener('click', () => {
         modal.classList.remove('active');
     });
 
-    // Fechar modal ao clicar fora da caixa (no fundo escuro)
     modal.addEventListener('click', (e) => {
         if (e.target === modal) {
             modal.classList.remove('active');
         }
     });
 
-    // Fechar modal ao pressionar a tecla ESC
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') {
             modal.classList.remove('active');
